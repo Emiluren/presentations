@@ -1,0 +1,82 @@
+* Emacs
+Ok, då ska jag prata lite om den andra stora "nörd-editorn": Emacs.
+Vim är ju baserad på en äldre editor som heter vi och som en anhängare
+av "The Church of Emacs" måste jag börja med att säga att vi vi vi
+blir 666 i romerska siffror vilket innebär att det är odjurets editor.
+
+Skämt åsido, Emacs och Vim är båda kraftfulla editorer med sina egna
+för- och nackdelar. Om det som gör vim unikt är uppdelningen mellan
+skriv- och kommandoläge är det i Emacs fall extrem utbyggbarhet.
+Vim-användare gillar att skämta att Emacs är ett operativsystem som
+bara saknar en bra texteditor. Men, många texteditorer har tillägg som
+ger dem vim-liknande beteende och ett av de mest avancerade heter Evil
+och är gjort för Emacs.
+
+/Kanske börja med M-x butterfly och tetris för att fånga intresse/
+
+De flesta kanske är vana att använda till exempel Ctrl-c för kopiera,
+Ctrl-x för klipp ut och Ctrl-s för spara /(Kanske kan skippas om Frans
+säger nåt liknande före)/. Men Emacs snabbkommandon bestämdes, precis
+som de i vim, på tiden innan det fanns någon standard. Så därför är
+det istället Alt-w for kopiera, Ctrl-w för klipp ut och Ctrl-x följt
+av s för att spara. Alt kallas inte för Alt i Emacs heller utan för
+Meta. Det beror på att Emacs skapades för ett tangentbord där det helt
+enkelt inte fanns någon alt-tangent men det fanns en meta-tangent.
+
+/Kanske visa en bild på ett space cadet-tangentbord/
+
+Man kan också skapa egna kommandon och alla kommandon kan bindas till
+valfri tangentbordskombination. Då kan det vara bra att ha ett sätt
+att veta vad man ska trycka för att utföra ett visst kommando eller
+tvärtom, vad för kommando som kommer att köra om man trycker en viss
+tangentkombination. En av mina favorit-funktioner i Emacs är det
+inbyggda hjälp-systemet.
+
+Om man trycker C-h följt av t /(Visa)/ får man upp en tutorial som
+förklarar många kommandon. Man behöver inte läsa den för att börja
+använda Emacs, för det är en hel del sidor med text. Man klarar sig
+bra i början med att klicka sig runt i programmet och lära sig mer
+avancerade funktioner efter hand.
+
+Ett annat bra hjälp kommando är C-h k som visar dokumentationen för
+det kommando som är bundet till en viss knapptryckning. Så, om jag
+trycker Ctrl-h och sen k kommer Emacs att säga "Describe a key, mouse
+klick, or menu action". Nu väntar den på att jag trycker på något så
+jag trycker på till exempel nedåtpil. Då får jag upp en hel massa
+text. "<down> runs the command next-line" står det först. Sen kan man
+läsa andra tangenter som är bundna till samma kommando. Här kan man se
+att C-n gör samma sak. Det är bra för personer som jag som är för lata
+för att flytta handen till piltangenterna.
+
+Det finns en hel del kommandon i Emacs som tar flera tryck innan något
+kommando körs, till exempel C-x s eller C-h k. Om man bara kommer ihåg
+början av ett kommando eller kanske vill veta vad det finns för andra
+kommandon som har samma start-kombination kan man trycka antingen C-h
+eller ? mitt i en sekvens för att få en lista av alla kommandon som
+har samma början. Så vi kan säga att vi har glömt bort
+tangentsekvensen för describe-key som visar dokumentationen för en
+tangent men vi kommer ihåg att den började med C-h. Om vi trycker C-h
+tipsar till och med Emacs oss om att vi kan trycka ? för att få fler
+val. Så, om jag trycker ? får vi en hel lista med alla kommandon som
+börjar på C-h. På k står kommandot vi var ute efter "Describe the full
+documentation for the key sequence". Vi kan också se här att k står
+för key.
+
+Det finns flera andra användbara hjälpfunktioner som till exempel C-h
+m som visar snabbtangenter för den filtyp du har öppen just nu och C-h
+r som öppnar den fullständiga manualen för Emacs. Bara
+innehållsförteckningen är typ lika många sidor som den grundläggande
+tutorialen som öppnades med C-h t.
+
+Ett sista användbart kommando innan jag visar lite av möjligheterna
+med Emacs är C-g som avbryter en påbörjad tangentsekvens. Man kan
+också trycka Escape tre gånger i rad. Att trycka Escape kanske är den
+reflex många har för att avbryta men om man bara trycker Escape en
+gång räknas det som en del av sekvensen och Emacs kommer behandla
+nästa tangent som om Alt-tangenten var nedtryckt. Det är lättare att
+bara komma ihåg C-g tycker jag i alla fall.
+
+Nu tänkte jag visa några mer eller mindre användbara grejer man kan
+göra i Emacs.
+
+/Kanske visa någon repl och nyan-mode/
